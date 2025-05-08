@@ -1,0 +1,22 @@
+{
+  "name": "@cxe/client",
+  "version": "0.1.0",
+  "public": true,
+  "license": "MIT",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "cxe.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cxe/client"
+  },
+  "exports": {
+    ".": {
+      "import": "./index.js"
+    },
+    "./*": {
+      "import": "./lib/*.js"
+    }
+  }
+}
