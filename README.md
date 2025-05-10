@@ -1,1 +1,1 @@
-# @cxe/client 0.1.1
+# @cxe/client 0.1.2
