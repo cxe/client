@@ -1,1 +1,2 @@
-# @cxe/client 0.1.2
+# @cxe/client
+Version 0.1.3
