@@ -11,6 +11,9 @@
   "contributors": [
     "Ian Carter"
   ],
+  "scripts": {
+    "test": "bash -c 'NODE_OPTIONS=--experimental-vm-modules jest'"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/cxe/client"
@@ -22,5 +25,20 @@
     "./*": {
       "import": "./lib/*.js"
     }
+  },
+  "devDependencies": {
+    "jest": "30.0.4"
+  },
+  "jest": {
+      "roots": ["<rootDir>/tests"],
+      "coverageDirectory": "tmp/coverage",
+      "testMatch": [
+          "**/tests/**/*.?(m)js?(x)",
+          "**/?(*.)+(spec|test).?(m)js?(x)"
+      ],
+      "transformIgnorePatterns": ["/node_modules/"],
+      "transform": {},
+      "testEnvironment": "node",
+      "verbose": false
   }
 }
